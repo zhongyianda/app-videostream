@@ -60,7 +60,7 @@ public class SWCodecCameraStreamingActivity extends StreamingBaseActivity
     private Button mEncodingOrientationSwitcherBtn;
     private StreamingProfile mProfile;
     private Context mContext;
-    private View mRootVie w;
+    private View mRootView;
     private TextView mStreamStatus;
 
     private FBO mFBO = new FBO();
@@ -371,7 +371,6 @@ public class SWCodecCameraStreamingActivity extends StreamingBaseActivity
     @Override
     public void onStateChanged(final int state, Object extra) {
         super.onStateChanged(state, extra);
-        Log.i("LALA", "change to " + state);
         switch (state) {
             case CameraStreamingManager.STATE.CAMERA_SWITCHED:
 //                mShutterButtonPressed = false;
